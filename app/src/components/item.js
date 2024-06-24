@@ -1,20 +1,25 @@
 import React from 'react';
-import './item.css';  // Import the CSS file
+import './item.css';
 
-const item= ({ title, description, imageurl }) => {
+const Item = ({ title, description, imageurl, moreurl }) => {
   return (
-    <div className="card my-2 mx-3">
-      <img src={imageurl} className="card-img-top service-image" alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <button>see more</button>
+    <div className="item-card">
+      <img src={imageurl} className="item-img" alt={title} />
+      <div className="item-body">
+        <h5 className="item-title">{title}</h5>
+        <p className="item-text">{description}</p>
+        {moreurl ? (
+          <a href={moreurl} className="item-btn" rel="noreferrer" target="_blank">See More</a>
+        ) : (
+          <button className="item-btn" onClick={() => alert('More information coming soon!')}>See More</button>
+        )}
       </div>
     </div>
   );
 };
 
-export default item;
+export default Item;
+
 
 
 

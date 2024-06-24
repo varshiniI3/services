@@ -1,0 +1,27 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  h1, p {
+    margin: 0;
+  }
+  
+  .item-card {
+    background-color: #f8f9fa;
+  }
+  
+  .item-card:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  

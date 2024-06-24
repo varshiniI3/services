@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #f8f9fa;
+    --alt-bg-color: #e9ecef;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  h1, p {
+    margin: 0;
+  }
+  
+  /* Button Styles */
+  .item-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .item-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  /* Alternative Background Colors for Sections */
+  .alt-bg {
+    background-color: var(--alt-bg-color);
+  }
+  

@@ -1,0 +1,46 @@
+/* Sidebar.css */
+.sidebar .contact, .sidebar .testimonial, .sidebar .news {
+    margin-bottom: 20px;
+}
+  
+.sidebar h2 {
+    color: #24272C; /* Text Color */
+}
+  
+.sidebar p {
+    color: #666; /* Secondary Color */
+}
+  
+.btn-contact, .btn-presentation {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: #fff; /* Text Color */
+    background-color: #3DB166; /* Primary Color */
+    border: none;
+    cursor: pointer;
+}
+  
+.btn-contact:hover, .btn-presentation:hover {
+    background-color: #0056b3; /* Updated hover color */
+}
+  
+.sidebar blockquote {
+    font-style: italic;
+    color: #666; /* Secondary Color */
+}
+  
+.sidebar .news ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.sidebar .news li {
+    color: #3DB166; /* Primary Color */
+    margin-bottom: 5px;
+}
+  
+.sidebar .news li:hover {
+    text-decoration: underline;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 import Sidebar from './Sidebar';
 import './ServicesGrid.css';
+import Banner from './Banner';
 
 const services = [
   {
@@ -12,17 +13,17 @@ const services = [
   {
     title: "Cloud Solutions",
     description: "Scalable and secure cloud infrastructure for efficient and reliable business operations.",
-    image: "https://images.shiksha.com/mediadata/ugcdocuments/images/wordpressimages/2021_12_programming-vs-web-development_480x360.jpg"
+    image: "https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development_480x360.jpg"
   },
   {
     title: "Marketing Solutions",
     description: "SEO, marketing, branding, online marketing, WhatsApp marketing.",
-    image: "https://images.shiksha.com/mediadata/ugcdocuments/images/wordpressimages/2021_12_programming-vs-web-development_480x360.jpg"
+    image: "https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development_480x360.jpg"
   },
   {
     title: "App Development",
     description: "Robust and user-friendly mobile applications from concept to deployment.",
-    image: "https://images.shiksha.com/mediadata/ugcdocuments/images/wordpressimages/2021_12_programming-vs-web-development_480x360.jpg"
+    image: "https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development_480x360.jpg"
   },
   {
     title: "Analytics and Reporting",
@@ -52,9 +53,11 @@ const services = [
 ];
 
 const ServicesGrid = () => (
+  <>
+  <Banner />
   <div className="services-page">
     <div className="services-header">
-      <h1>services</h1>
+      {/* <h1>Services</h1> */}
     </div>
     <div className="content">
       <div className="services-list">
@@ -70,6 +73,7 @@ const ServicesGrid = () => (
       <Sidebar />
     </div>
   </div>
+  </>
 );
 
 export default ServicesGrid;

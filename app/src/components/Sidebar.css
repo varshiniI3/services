@@ -1,46 +1,103 @@
 /* Sidebar.css */
+
+/* General Sidebar Styling */
 .sidebar .contact, .sidebar .testimonial, .sidebar .news {
     margin-bottom: 20px;
 }
-  
+
 .sidebar h2 {
-    color: #24272C; /* Text Color */
+    color: var(--text-color); /* Text Color */
 }
-  
+
 .sidebar p {
-    color: #666; /* Secondary Color */
+    color: var(--secondary-color); /* Secondary Color */
 }
-  
+
+/* Button Styling */
 .btn-contact, .btn-presentation {
     display: block;
     width: 100%;
     margin: 10px 0;
     padding: 10px;
     color: #fff; /* Text Color */
-    background-color: #3DB166; /* Primary Color */
+    background-color: var(--primary-color); /* Primary Color */
     border: none;
     cursor: pointer;
 }
-  
+
 .btn-contact:hover, .btn-presentation:hover {
     background-color: #0056b3; /* Updated hover color */
 }
-  
+
+/* Blockquote Styling */
 .sidebar blockquote {
     font-style: italic;
-    color: #666; /* Secondary Color */
+    color: var(--secondary-color); /* Secondary Color */
 }
-  
+
+/* News Section Styling */
 .sidebar .news ul {
     list-style: none;
     padding: 0;
 }
-  
+
 .sidebar .news li {
-    color: #3DB166; /* Primary Color */
+    color: var(--primary-color); /* Primary Color */
     margin-bottom: 5px;
 }
-  
+
 .sidebar .news li:hover {
+    text-decoration: underline;
+}
+
+/* New Global Color Variables */
+:root {
+    --primary-color: #3DB166;
+    --secondary-color: #192F59;
+    --text-color: #24272C;
+    --page-bg-color: #F2F2F2;
+}
+
+/* Applying Global Color Variables */
+body {
+    background-color: var(--page-bg-color); /* Page BG Color */
+    font-family: 'Poppins', sans-serif; /* Font Style */
+    font-size: 16px; /* Body text size */
+    line-height: 1.6; /* Line height */
+    color: var(--text-color); /* Text color */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+/* Link Styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }

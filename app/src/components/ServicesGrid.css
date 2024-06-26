@@ -63,6 +63,7 @@ a:hover {
 
 .content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services-list {
@@ -107,4 +108,66 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    .services-page {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs {
+        height: auto;
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+
+    .section {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        margin-left: 0;
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .breadcrumbs {
+        padding: 10px;
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+
+    .section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }

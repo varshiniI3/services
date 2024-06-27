@@ -18,15 +18,20 @@
 // reportWebVitals();
 
 
-
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';  // Updated import
 import ServicesGrid from './components/ServicesGrid';
 import './index.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
-ReactDOM.render(
+library.add(fas);
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+
+root.render(
   <React.StrictMode>
     <ServicesGrid />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

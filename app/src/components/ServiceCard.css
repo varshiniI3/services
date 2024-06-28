@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    background-color: #F2F2F2; /* Page BG Color */
+    color: #24272C; /* Text Color */
+    font-family: 'Poppins', sans-serif; /* Font Style */
+    font-size: 16px; /* Body text */
+    line-height: 1.6; /* Line height */
+}
+
 .service-card {
     display: flex;
     flex-direction: column;
@@ -11,40 +21,103 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s;
-  }
-  
-  .service-card:hover {
+}
+
+.service-card:hover {
     transform: scale(1.05);
-  }
-  
-  .home-service-icon {
+}
+
+.home-service-icon {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60px; /* Adjust the size as needed */
     height: 60px; /* Adjust the size as needed */
-  }
-  
-  .service-content h3 {
-    font-size: 1.5em;
+}
+
+.service-content {
+    padding: 10px; /* Box Padding */
+}
+
+.service-content h3 {
+    font-size: 20px; /* Primary heading h3 */
     margin: 10px 0;
-  }
-  
-  .service-content p {
-    font-size: 1em;
-    color: #555;
-  }
-  
-  .service-content a {
+    color: #192F59; /* Secondary Color */
+}
+
+.service-content p {
+    font-size: 16px; /* Body text */
+    color: #24272C; /* Text Color */
+}
+
+.service-content a {
     display: inline-block;
     margin-top: 10px;
-    color: #3DB166;
+    color: #3DB166; /* Primary Color */
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .service-content a:hover {
+}
+
+.service-content a:hover {
     text-decoration: underline;
-  }
-  
+    color: #3DB166; /* Primary Color */
+}
+
+button {
+    background-color: #3DB166; /* Primary Color */
+    color: #fff; /* White Text */
+    border: 1px solid #3DB166; /* Primary Color */
+    border-radius: 6px;
+    padding: 10px 20px; /* 10px height, 20px width */
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: #192F59; /* Secondary Color */
+    color: #3DB166; /* Primary Color Text */
+}
+
+/* Primary Headings */
+h1 {
+    font-size: 32px;
+    color: #192F59; /* Secondary Color */
+}
+
+h2 {
+    font-size: 24px;
+    color: #192F59; /* Secondary Color */
+}
+
+h3 {
+    font-size: 20px;
+    color: #192F59; /* Secondary Color */
+}
+
+h4 {
+    font-size: 18px;
+    color: #192F59; /* Secondary Color */
+}
+
+/* Subheadings */
+h5 {
+    font-size: 16px;
+    color: #192F59; /* Secondary Color */
+}
+
+h6 {
+    font-size: 14px;
+    color: #192F59; /* Secondary Color */
+}
+
+/* Links */
+a {
+    color: #3DB166; /* Primary Color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3DB166; /* Primary Color */
+}

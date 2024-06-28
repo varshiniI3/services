@@ -40,14 +40,16 @@
   
   .footer-button {
     background-color: #3DB166; /* Primary color */
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    color: white; /* White text */
+    border: 1px solid #3DB166; /* Border color */
+    border-radius: 6px; /* Border radius */
+    padding: 10px 20px; /* Button Padding */
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .footer-button:hover {
-    background-color: #2a904f; /* Darker shade of primary color */
-  }
-  
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #192F59; /* Secondary color */
+    color: #3DB166; /* Primary color text */
+    border-color: #192F59; /* Secondary color */
+}

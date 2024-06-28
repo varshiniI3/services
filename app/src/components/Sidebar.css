@@ -1,7 +1,7 @@
-/* Sidebar.css */
-
 /* General Sidebar Styling */
-.sidebar .contact, .sidebar .testimonial, .sidebar .news {
+.sidebar .contact,
+.sidebar .testimonial,
+.sidebar .news {
     margin-bottom: 20px;
 }
 
@@ -14,7 +14,8 @@
 }
 
 /* Button Styling */
-.btn-contact, .btn-presentation {
+.btn-contact,
+.btn-presentation {
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -23,9 +24,11 @@
     background-color: var(--primary-color); /* Primary Color */
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btn-contact:hover, .btn-presentation:hover {
+.btn-contact:hover,
+.btn-presentation:hover {
     background-color: #0056b3; /* Updated hover color */
 }
 
@@ -100,4 +103,51 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+
+/* Example: Adjust margins for smaller screens */
+@media (max-width: 768px) {
+    .sidebar .contact,
+    .sidebar .testimonial,
+    .sidebar .news {
+        margin-bottom: 10px;
+    }
+}
+
+/* Example: Adjust font sizes for smaller screens */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+}
+
+/* Example: Adjust padding and font sizes for very small screens */
+@media (max-width: 360px) {
+    .btn-contact,
+    .btn-presentation {
+        padding: 8px 16px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
 }

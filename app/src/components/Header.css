@@ -1,4 +1,16 @@
-.button {
+/* Header.css */
+
+.header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .header h1 {
+    color: #3DB166;
+  }
+  
+  .button {
     background-color: #3DB166; /* Primary color */
     color: white; /* White text */
     border: 1px solid #3DB166; /* Border color */
@@ -6,10 +18,11 @@
     padding: 10px 20px; /* Button Padding */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.button:hover {
+  }
+  
+  .button:hover {
     background-color: #192F59; /* Secondary color */
     color: #3DB166; /* Primary color text */
     border-color: #192F59; /* Secondary color */
-}
+  }
+  

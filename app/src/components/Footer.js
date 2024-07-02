@@ -1,17 +1,3 @@
-// import React from 'react';
-
-// function Footer() {
-//   return (
-//     <footer className="text-center py-3">
-//       <p style={{ color: "#3DB166" }}>&copy; 2024 Your Company. All rights reserved.</p>
-//     </footer>
-//   );
-// }
-
-// export default Footer;
-
-// src/components/Footer.js
-
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
 

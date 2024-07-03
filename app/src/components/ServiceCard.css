@@ -15,7 +15,6 @@ body {
     justify-content: center; /* Center the content vertically */
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -34,6 +33,8 @@ body {
     justify-content: center;
     width: 60px; /* Adjust the size as needed */
     height: 60px; /* Adjust the size as needed */
+    font-size: 40px;
+    color: #3DB166; /* Primary Color */
 }
 
 .service-content {
@@ -80,44 +81,9 @@ button:hover {
 }
 
 /* Primary Headings */
-h1 {
-    font-size: 32px;
-    color: #192F59; /* Secondary Color */
-}
-
-h2 {
-    font-size: 24px;
-    color: #192F59; /* Secondary Color */
-}
 
 h3 {
     font-size: 20px;
     color: #192F59; /* Secondary Color */
 }
 
-h4 {
-    font-size: 18px;
-    color: #192F59; /* Secondary Color */
-}
-
-/* Subheadings */
-h5 {
-    font-size: 16px;
-    color: #192F59; /* Secondary Color */
-}
-
-h6 {
-    font-size: 14px;
-    color: #192F59; /* Secondary Color */
-}
-
-/* Links */
-a {
-    color: #3DB166; /* Primary Color */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #3DB166; /* Primary Color */
-}

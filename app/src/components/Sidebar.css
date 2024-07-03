@@ -1,153 +1,77 @@
-/* General Sidebar Styling */
-.sidebar .contact,
-.sidebar .testimonial,
-.sidebar .news {
-    margin-bottom: 20px;
+/* Sidebar.css */
+
+.sidebar {
+    background-color: #F2F2F2;
+    color: #24272C;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
 }
 
-.sidebar h2 {
-    color: var(--text-color); /* Text Color */
-}
-
-.sidebar p {
-    color: var(--secondary-color); /* Secondary Color */
-}
-
-/* Button Styling */
-.btn-contact,
-.btn-presentation {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    color: #fff; /* Text Color */
-    background-color: var(--primary-color); /* Primary Color */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-contact:hover,
-.btn-presentation:hover {
-    background-color: #0056b3; /* Updated hover color */
-}
-
-/* Blockquote Styling */
-.sidebar blockquote {
-    font-style: italic;
-    color: var(--secondary-color); /* Secondary Color */
-}
-
-/* News Section Styling */
-.sidebar .news ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar .news li {
-    color: var(--primary-color); /* Primary Color */
-    margin-bottom: 5px;
-}
-
-.sidebar .news li:hover {
-    text-decoration: underline;
-}
-
-/* New Global Color Variables */
-:root {
-    --primary-color: #3DB166;
-    --secondary-color: #192F59;
-    --text-color: #24272C;
-    --page-bg-color: #F2F2F2;
-}
-
-/* Applying Global Color Variables */
-body {
-    background-color: var(--page-bg-color); /* Page BG Color */
-    font-family: 'Poppins', sans-serif; /* Font Style */
-    font-size: 16px; /* Body text size */
-    line-height: 1.6; /* Line height */
-    color: var(--text-color); /* Text color */
-}
-
-/* Heading Styles */
-h1 {
-    font-size: 32px;
+.contact-section, .brochure-section, .benefits-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #192F59;
+    border-radius: 5px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
+    color: #192F59;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
+    color: #192F59;
 }
 
 h4 {
     font-size: 18px;
+    color: #192F59;
 }
 
-h5 {
+p {
     font-size: 16px;
+    line-height: 1.6;
 }
 
-h6 {
-    font-size: 14px;
+.contact-button {
+    background-color: #3DB166; /* Primary Color */
+    color: #fff; /* White Text */
+    border: 1px solid #3DB166; /* Primary Color */
+    border-radius: 6px;
+    padding: 10px 20px; /* 10px height, 20px width */
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-/* Link Styles */
-a {
-    color: var(--primary-color);
+.contact-button:hover {
+    background-color: #192F59; /* Secondary Color */
+    color: #3DB166; /* Primary Color Text */
+}
+
+.download-links {
+    margin-top: 10px;
+}
+
+.download-link {
+    display: block;
+    color: #3DB166;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
-a:hover {
+.download-link:hover {
     text-decoration: underline;
 }
 
-/* Responsive Adjustments */
-
-/* Example: Adjust margins for smaller screens */
-@media (max-width: 768px) {
-    .sidebar .contact,
-    .sidebar .testimonial,
-    .sidebar .news {
-        margin-bottom: 10px;
-    }
+.benefit {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
-/* Example: Adjust font sizes for smaller screens */
-@media (max-width: 576px) {
-    h1 {
-        font-size: 28px;
-    }
-    h2 {
-        font-size: 22px;
-    }
-    h3 {
-        font-size: 18px;
-    }
-    h4 {
-        font-size: 16px;
-    }
-    h5 {
-        font-size: 14px;
-    }
-    h6 {
-        font-size: 12px;
-    }
-}
-
-/* Example: Adjust padding and font sizes for very small screens */
-@media (max-width: 360px) {
-    .btn-contact,
-    .btn-presentation {
-        padding: 8px 16px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 20px;
-    }
+.benefit img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }

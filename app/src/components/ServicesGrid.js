@@ -2,7 +2,6 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 import Sidebar from './Sidebar';
 import './ServicesGrid.css';
-import Banner from './Banner';
 import Header from './Header';
 import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +11,7 @@ const services = [
   {
     title: "Web Solutions",
     description: "E-commerce solutions (websites, Amazon, Flipkart listings), custom development (web and software)",
-    icon: <FontAwesomeIcon icon={faCode} />
+    icon:  <FontAwesomeIcon icon={faCode} />
   },
   {
     title: "Cloud Solutions",
@@ -58,10 +57,9 @@ const services = [
 
 const ServicesGrid = () => (
   <>
-    <Banner />
+    <Header />
     <div className="services-page">
       <div className="services-header">
-        <Header />
       </div>
       <div className="content">
         <div className="services-list">
@@ -76,8 +74,9 @@ const ServicesGrid = () => (
         </div>
         <Sidebar />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
+    <Footer />
   </>
 );
 

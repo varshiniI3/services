@@ -5,36 +5,34 @@
     color: #24272C;
     font-family: 'Poppins', sans-serif;
     padding: 20px;
+    font-size: 16px; /* Body text */
+    line-height: 1.6;
+}
+
+.sidebar h2, .sidebar h3, .sidebar h4 {
+    color: #192F59;
+}
+
+.sidebar h2 {
+    font-size: 30px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+}
+
+.sidebar h4 {
+    font-size: 18px;
 }
 
 .contact-section, .brochure-section, .benefits-section {
-    background-color: #fff;
+    background: linear-gradient(145deg, #fff, #e6e6e6);
     border: 1px solid #ddd;
     margin-bottom: 30px;
     padding: 15px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
     /* border: 1px solid #192F59; */
-    border-radius: 5px;
-}
-
-h2 {
-    font-size: 32px;
-    color: #192F59;
-}
-
-h3 {
-    font-size: 24px;
-    color: #192F59;
-}
-
-h4 {
-    font-size: 18px;
-    color: #192F59;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
+    border-radius: 6px;
 }
 
 .contact-button {
@@ -48,8 +46,9 @@ p {
 }
 
 .contact-button:hover {
-    background-color: #192F59; /* Secondary Color */
-    color: #3DB166; /* Primary Color Text */
+    background-color: #192F59; /* Secondary color */
+    color: #3DB166; /* Primary color text */
+    border-color: solid #3DB166; /* Secondary color */
 }
 
 .download-links {

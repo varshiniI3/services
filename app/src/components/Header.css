@@ -2,7 +2,7 @@
 .header {
   background-image: url('../assets/images/services-banner.jpg ');
   background-size: cover;
-  height: 250px; /* Adjust based on your header height */
+  height: 200px; /* Adjust based on your header height */
   display: flex;
   align-items: center; /* Center vertically */
   position: relative;
@@ -16,6 +16,8 @@
   top: 50%; /* Vertically center the content */
   left: 30%;
   transform: translate(-50%, -50%); /* Adjust for vertical centering */
+  font-family: 'Poppins', sans-serif; /* Font Style */
+  font-size: 16px; /* Body text */
 }
 
 .header-logo img {

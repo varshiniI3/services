@@ -1,7 +1,7 @@
 /* src/components/Footer.css */
 
 .footer {
-  width:100%;
+  width: 100%;
   position: relative;
   background: url('../assets/images/footer-banner.jpeg') no-repeat center center;
   background-size: cover;
@@ -9,7 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box; /* Ensure padding is included in the height and width */
 }
+
 
 .footer-overlay {
   background: rgba(0, 0, 0, 0.6); /* Dark overlay */
@@ -54,7 +56,7 @@
 .footer-button:hover {
   background-color: #192F59; /* Secondary color */
   color: #3DB166; /* Primary color text */
-  border-color: #192F59; /* Secondary color */
+  border-color: #3DB166; /* Secondary color */
 }
 
 /* Responsive adjustments */

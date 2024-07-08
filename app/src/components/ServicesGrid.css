@@ -69,13 +69,13 @@ a:hover {
 .services-list {
     flex: 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Ensure two cards per row */
+    gap: 10px;
 }
 
 .sidebar {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 90px;
 }
 
 .contact {
@@ -141,7 +141,7 @@ a:hover {
     }
 
     .services-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 
     .sidebar {

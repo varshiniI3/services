@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ServiceCard from './ServiceCard';
 import Sidebar from './Sidebar';
@@ -11,7 +12,7 @@ const services = [
   {
     title: "Web Solutions",
     description: "E-commerce solutions (websites, Amazon, Flipkart listings), custom development (web and software)",
-    icon:  <FontAwesomeIcon icon={faCode} />
+    icon: <FontAwesomeIcon icon={faCode} />
   },
   {
     title: "Cloud Solutions",
@@ -58,23 +59,24 @@ const services = [
 const ServicesGrid = () => (
   <>
     <Header />
-    <div className="services-page">
-      <div className="services-header">
-      </div>
-      <div className="content">
-        <div className="services-list">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
-          ))}
+    <div className="container">
+      <div className="services-page">
+        <div className="services-header">
         </div>
-        <Sidebar />
+        <div className="content">
+          <div className="services-list">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            ))}
+          </div>
+          <Sidebar />
+        </div>
       </div>
-      {/* <Footer /> */}
     </div>
     <Footer />
   </>

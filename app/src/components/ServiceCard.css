@@ -13,17 +13,19 @@ body {
     flex-direction: column;
     align-items: center; /* Center the content horizontally */
     justify-content: center; /* Center the content vertically */
-    background-color: #fff;
+    background: linear-gradient(145deg, #fff, #e6e6e6);
     border: 1px solid #ddd;
+    /* border-radius: 12px; Rounded corners */
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform .2s, box-shadow .2s;
 }
 
 .service-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .home-service-icon {
@@ -31,8 +33,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px; /* Adjust the size as needed */
-    height: 60px; /* Adjust the size as needed */
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%;
+    background-color: #e0f7ea;
     font-size: 40px;
     color: #3DB166; /* Primary Color */
 }
@@ -52,38 +56,28 @@ body {
     color: #24272C; /* Text Color */
 }
 
-.service-content a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #3DB166; /* Primary Color */
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.service-content a:hover {
-    text-decoration: underline;
-    color: #3DB166; /* Primary Color */
+.read-more {
+    color: #3db166;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: left;
+    text-decoration: none;
 }
 
 button {
-    background-color: #3DB166; /* Primary Color */
+    background: linear-gradient(45deg, #3DB166, #1DA362); /* Gradient background */
     color: #fff; /* White Text */
-    border: 1px solid #3DB166; /* Primary Color */
+    border: none; /* Remove border */
     border-radius: 6px;
     padding: 10px 20px; /* 10px height, 20px width */
     cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #192F59; /* Secondary Color */
-    color: #3DB166; /* Primary Color Text */
+    background: linear-gradient(45deg, #192F59, #0f1d3a); /* Secondary Gradient */
+    transform: translateY(-3px);
 }
-
-/* Primary Headings */
-
-h3 {
-    font-size: 20px;
-    color: #192F59; /* Secondary Color */
-}
-

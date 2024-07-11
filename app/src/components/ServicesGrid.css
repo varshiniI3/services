@@ -69,13 +69,13 @@ a:hover {
 .services-list {
     flex: 3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Ensure two cards per row */
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Ensure two cards per row */
+    gap: 1px;
 }
 
 .sidebar {
     flex: 1;
-    margin-left: 90px;
+    /* margin-left: 60px; */
 }
 
 .contact {
@@ -85,21 +85,6 @@ a:hover {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 20px;
-}
-
-.contact button {
-    background-color: #fff;
-    color: #3DB166; /* Primary color */
-    border: 2px solid #3DB166; /* Primary color */
-    border-radius: 6px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.contact button:hover {
-    background-color: #ffd700; /* Hover color */
-    color: #3DB166; /* Primary color */
 }
 
 .testimonial, .news {

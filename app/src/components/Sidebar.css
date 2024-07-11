@@ -1,12 +1,22 @@
-/* Sidebar.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
-.sidebar {
-    background-color: #F2F2F2;
+.sidebar-container {
+    background: linear-gradient(145deg, #fff, #e6e6e6);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px;
     color: #24272C;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
     font-size: 16px; /* Body text */
     line-height: 1.6;
+    border: 3px solid #192F59; /* Thicker border */
+    border-radius: 6px;
+    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
+    width: 25%; /* Adjust the width as needed */
 }
 
 .sidebar h2, .sidebar h3, .sidebar h4 {
@@ -25,16 +35,6 @@
     font-size: 18px;
 }
 
-.contact-section, .brochure-section, .benefits-section {
-    background: linear-gradient(145deg, #fff, #e6e6e6);
-    border: 1px solid #ddd;
-    margin-bottom: 30px;
-    padding: 15px;
-    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
-    /* border: 1px solid #192F59; */
-    border-radius: 6px;
-}
-
 .contact-button {
     background-color: #3DB166; /* Primary Color */
     color: #fff; /* White Text */
@@ -43,6 +43,7 @@
     padding: 10px 20px; /* 10px height, 20px width */
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
+    margin-bottom: 10px;
 }
 
 .contact-button:hover {
@@ -76,4 +77,12 @@
     width: 50px;
     height: 50px;
     margin-right: 10px;
+}
+
+.main-content {
+    width: 70%; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
 }

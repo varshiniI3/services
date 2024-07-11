@@ -87,3 +87,12 @@
     border-radius: 6px;
     box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
 }
+
+.sidebar h2::after, .sidebar h4::after {
+    content: "";
+    display: block;
+    width: 80px; /* Adjust the width as needed */
+    height: 3px; /* Adjust the height as needed */
+    background-color: #192F59; /* Secondary color */
+    margin-top: 5px; /* Adjust the margin as needed */
+}

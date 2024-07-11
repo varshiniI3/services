@@ -34,7 +34,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
-    color: #666;
+    /* color: #666; */
     background-color: #F2F2F2; /* Page BG Color */
     padding: 0 20px;
     margin-bottom: 20px;
@@ -80,7 +80,7 @@ a:hover {
 
 .contact {
     background-color: #3DB166; /* Primary color */
-    color: #fff;
+    color: #F2F2F2;
     padding: 20px;
     border-radius: 8px;
     text-align: center;

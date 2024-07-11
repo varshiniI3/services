@@ -148,9 +148,7 @@ const ServicesGrid = () => (
   <>
     <Header />
     <div className="container">
-      <div className="main-content">
         <div className="services-page">
-          <div className="services-header"></div>
           <div className="content">
             <div className="services-list">
               {services.map((service, index) => (
@@ -164,7 +162,6 @@ const ServicesGrid = () => (
             </div>
           </div>
         </div>
-      </div>
       <Sidebar />
     </div>
     <Footer />

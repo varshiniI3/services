@@ -14,7 +14,7 @@
 .header-content {
   position: absolute; /* Allows precise positioning */
   top: 50%; /* Vertically center the content */
-  left: 30%;
+  left: 15%;
   transform: translate(-50%, -50%); /* Adjust for vertical centering */
   font-family: 'Poppins', sans-serif; /* Font Style */
   font-size: 16px; /* Body text */

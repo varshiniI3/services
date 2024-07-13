@@ -14,8 +14,8 @@ body {
     align-items: center; /* Center the content horizontally */
     justify-content: center; /* Center the content vertically */
     background: linear-gradient(145deg, #fff, #e6e6e6);
-    border: 1px solid #ddd;
-    /* border-radius: 12px; Rounded corners */
+    /* border: 1px solid #ddd; */
+    border-radius: 12px; /*Rounded corners */
     padding: 20px;
     margin: 20px;
     box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;

@@ -211,8 +211,8 @@
     }
 
     .sidebar-container {
-        width: 90%; /* Full width on smaller screens */
-        margin-left: 20px;
+        width: 80%; /* Full width on smaller screens */
+        margin-left: 15%;
         margin-right: 0;
     }
 

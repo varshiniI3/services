@@ -193,11 +193,11 @@ a:hover {
   .services-list {
     grid-template-columns: 1fr; /* Single column on smallest screens */
     gap: 10px; /* Smaller gap between items */
-    margin-left: 15%;
+    margin-left: 10%;
   }
 
   .sidebar {
-    margin-left: 0; /* Remove left margin for sidebar */
+    margin-left: 10%; /* Remove left margin for sidebar */
     width: 100%;
   }
 

@@ -140,7 +140,7 @@
 
 @media (max-width: 768px) {
     .sidebar-container {
-        width: 100%; /* Full width on smaller screens */
+        width: 80%; /* Full width on smaller screens */
         margin-left: 0;
         margin-right: 0;
     }
@@ -211,7 +211,7 @@
     }
 
     .sidebar-container {
-        width: 80%; /* Full width on smaller screens */
+        width: 40%; /* Full width on smaller screens */
         margin-left: 15%;
         margin-right: 0;
     }

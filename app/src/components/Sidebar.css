@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: nowrap; /* Keep the sidebar and main content on the same line on larger screens */
 }
 
 .sidebar-container {
     background: linear-gradient(145deg, #fff, #e6e6e6);
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-left :30px;
     padding: 15px;
     color: #24272C;
     font-family: 'Poppins', sans-serif;
@@ -18,6 +20,7 @@
     border-radius: 6px;
     box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
     width: 25%; /* Adjust the width as needed */
+    min-width: 280px; /* Minimum width to ensure readability */
 }
 
 .sidebar h2, .sidebar h3, .sidebar h4 {
@@ -88,11 +91,93 @@
     box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
 }
 
-.sidebar h2::after, .sidebar h4::after {
+.sidebar h2::after {
     content: "";
     display: block;
     width: 80px; /* Adjust the width as needed */
     height: 3px; /* Adjust the height as needed */
     background-color: #192F59; /* Secondary color */
     margin-top: 5px; /* Adjust the margin as needed */
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .main-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .contact-button {
+        padding: 6px 12px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .sidebar-container {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .sidebar h2 {
+        font-size: 22px; /* Smaller font size */
+    }
+
+    .sidebar h3 {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .sidebar h4 {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .contact-button {
+        padding: 5px 10px; /* Smaller padding */
+    }
+
+    .benefit img {
+        width: 40px; /* Smaller images */
+        height: 40px; /* Smaller images */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar h2 {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .sidebar h3 {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .sidebar h4 {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .benefit img {
+        width: 35px; /* Smaller images */
+        height: 35px; /* Smaller images */
+    }
 }

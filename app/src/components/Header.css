@@ -1,21 +1,22 @@
 /* src/Header.css */
 .header {
-  background-image: url('../assets/images/services-banner.jpg ');
+  background-image: url('../assets/images/services-banner.jpg');
   background-size: cover;
   height: 200px; /* Adjust based on your header height */
   display: flex;
   align-items: center; /* Center vertically */
   position: relative;
-  justify-content: center; /* Center horizontally */
-  text-align: center;
-  width:100%;
+  justify-content: flex-start; /* Align to the left */
+  text-align: left; /* Align text to the left */
+  padding-left: 20px; /* Add some padding to the left */
+  width: 100%;
 }
 
 .header-content {
   position: absolute; /* Allows precise positioning */
   top: 50%; /* Vertically center the content */
-  left: 15%;
-  transform: translate(-50%, -50%); /* Adjust for vertical centering */
+  left: 20px; /* Adjust as needed */
+  transform: translateY(-50%); /* Adjust for vertical centering */
   font-family: 'Poppins', sans-serif; /* Font Style */
   font-size: 16px; /* Body text */
 }
@@ -29,7 +30,7 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center navigation items */
+  justify-content: flex-start; /* Align navigation items to the left */
 }
 
 .header-link {
@@ -38,6 +39,7 @@
   font-weight: bold;
   position: relative;
   margin: 0 10px; /* Space between links */
+  margin-left: 65px;
 }
 
 .header-bullet {
@@ -53,6 +55,7 @@
   font-size: 0.7em; /* Smaller font size */
   color: rgba(255, 255, 255, 0.7); /* Less bright white color */
   margin-bottom: 5px; /* Space between this text and the heading */
+  margin-left: 65px;
 }
 
 .header-underline {
@@ -60,16 +63,15 @@
   height: 3px; /* Thickness of the line */
   background-color: white;
   position: absolute;
-  left: 8%; /* Center it horizontally under the text */
-  transform: translateX(-50%);
-  top: calc(100% + 10px); /* 5px gap between the text and line */
+  left: 20px; /* Align it to the left */
+  top: calc(100% + 10px); /* 10px gap between the text and line */
   display: block;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .header {
-    height: 200px; /* Adjust for large screens */
+    height: 180px; /* Adjust for large screens */
   }
 
   .header-nav {
@@ -82,14 +84,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
-    height: 180px; /* Adjust for tablets */
+    height: 160px; /* Adjust for tablets */
   }
 
   .header-nav {
     font-size: 24px; /* Smaller font size */
-    flex-direction: column; /* Stack links vertically */
   }
 
   .header-link {
@@ -102,13 +103,38 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header {
-    height: 150px; /* Adjust for mobile */
+    height: 140px; /* Adjust for smaller tablets */
   }
 
   .header-nav {
     font-size: 20px; /* Smaller font size */
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .header-link {
+    font-size: 0.8em; /* Smaller font size */
+    margin: 5px 0; /* Adjust spacing */
+  }
+
+  .header-logo img {
+    height: 25px; /* Smaller logo */
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 120px; /* Adjust for mobile */
+  }
+
+  .header-content {
+    font-size: 14px; /* Smaller font size */
+    left: 10px; /* Adjust as needed */
+  }
+
+  .header-nav {
+    font-size: 18px; /* Smaller font size */
   }
 
   .header-link {
@@ -117,6 +143,30 @@
   }
 
   .header-logo img {
-    height: 25px; /* Smaller logo */
+    height: 20px; /* Smaller logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 100px; /* Adjust for smaller mobile screens */
+  }
+
+  .header-content {
+    font-size: 12px; /* Smaller font size */
+    left: 5px; /* Adjust as needed */
+  }
+
+  .header-nav {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .header-link {
+    font-size: 0.6em; /* Smaller font size */
+    margin: 5px 0; /* Adjust spacing */
+  }
+
+  .header-logo img {
+    height: 15px; /* Smaller logo */
   }
 }

@@ -23,6 +23,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.breadcrumbs {
+  display: flex;
+  justify-content: center; /* Center align breadcrumbs */
+  padding: 20px;
+  position: relative;
+  left: 15%; /* Position 15% from the left */
+  transform: translateX(-15%); /* Centering adjustment */
+  width: 70%; /* Adjust the width if necessary */
+  text-align: center;
+}
+
 .services-page {
   width: 100%;
   padding-top: 5%;
@@ -38,12 +49,12 @@ a:hover {
   flex: 3;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Ensure three cards per row */
-  gap: 20px; /* Gap between grid items */
+  gap: 5px; /* Gap between grid items */
 }
 
 .sidebar {
   flex: 1;
-  margin-left: 20px; /* Space between services-list and sidebar */
+  margin-left: 5px; /* Space between services-list and sidebar */
   margin-right: 20px;
 }
 
@@ -77,8 +88,9 @@ a:hover {
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    height: auto;
-    font-size: 1em;
+    width: 80%;
+    left: 10%; /* Adjust position for smaller screens */
+    transform: translateX(-10%);
     padding: 20px;
   }
 
@@ -103,6 +115,13 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .breadcrumbs {
+    width: 90%;
+    left: 5%; /* Adjust position for smaller screens */
+    transform: translateX(-5%);
+    padding: 20px;
+  }
+
   .content {
     flex-direction: column;
   }
@@ -127,6 +146,9 @@ a:hover {
   }
 
   .breadcrumbs {
+    width: 100%;
+    left: 0; /* Center position for smallest screens */
+    transform: translateX(0);
     padding: 10px;
   }
 
@@ -171,6 +193,7 @@ a:hover {
   .services-list {
     grid-template-columns: 1fr; /* Single column on smallest screens */
     gap: 10px; /* Smaller gap between items */
+    margin-left: 15%;
   }
 
   .sidebar {

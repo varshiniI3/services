@@ -26,9 +26,13 @@ a:hover {
 
 .services-page {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.container{
+  justify-content: left;
 }
 
 .breadcrumbs {
@@ -39,15 +43,6 @@ a:hover {
   font-size: 1.2em;
   background-color: #F2F2F2; /* Page BG Color */
   padding: 0 20px;
-  margin-bottom: 20px;
-}
-
-.hero-section {
-  height: 800px;
-  background-color: #F2F2F2; /* Page BG Color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 20px;
 }
 

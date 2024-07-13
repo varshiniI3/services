@@ -8,10 +8,13 @@
 }
 
 .sidebar-container {
+    margin-left: 30px;
     background: linear-gradient(145deg, #fff, #e6e6e6);
     margin-bottom: 30px;
-    margin-top: 30px;
-    padding: 15px;
+    margin-top: 75px;
+    padding: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     color: #24272C;
     font-family: 'Poppins', sans-serif;
     font-size: 16px; /* Body text */
@@ -25,6 +28,8 @@
 
 .sidebar h2, .sidebar h3, .sidebar h4 {
     color: #192F59;
+    /* margin-top: 10px; Adjust the margin as needed */
+    /* margin-bottom: 10px; */
 }
 
 .sidebar h2 {
@@ -97,7 +102,12 @@
     width: 80px; /* Adjust the width as needed */
     height: 3px; /* Adjust the height as needed */
     background-color: #192F59; /* Secondary color */
-    margin-top: 5px; /* Adjust the margin as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
+    /* margin-bottom: 10px; */
+}
+.contact-section,.brochure-section,.benefits-section{
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 /* Responsive Styling */
@@ -118,7 +128,7 @@
 
 @media (max-width: 768px) {
     .sidebar-container {
-        width: 100%; /* Full width on smaller screens */
+        width: 80%; /* Full width on smaller screens */
         margin-left: 0;
         margin-right: 0;
     }

@@ -1,4 +1,3 @@
-
 // import React from 'react';
 // import ServiceCard from './ServiceCard';
 // import Sidebar from './Sidebar';
@@ -12,7 +11,7 @@
 //   {
 //     title: "Web Solutions",
 //     description: "E-commerce solutions (websites, Amazon, Flipkart listings), custom development (web and software)",
-//     icon: <FontAwesomeIcon icon={faCode} />
+//     icon:  <FontAwesomeIcon icon={faCode} />
 //   },
 //   {
 //     title: "Cloud Solutions",
@@ -61,8 +60,6 @@
 //     <Header />
 //     <div className="container">
 //       <div className="services-page">
-//         <div className="services-header">
-//         </div>
 //         <div className="content">
 //           <div className="services-list">
 //             {services.map((service, index) => (
@@ -74,9 +71,9 @@
 //               />
 //             ))}
 //           </div>
-//           <Sidebar />
 //         </div>
 //       </div>
+//       <Sidebar />
 //     </div>
 //     <Footer />
 //   </>
@@ -147,22 +144,20 @@ const services = [
 const ServicesGrid = () => (
   <>
     <Header />
-    <div className="container">
-        <div className="services-page">
-          <div className="content">
-            <div className="services-list">
-              {services.map((service, index) => (
-                <ServiceCard
-                  key={index}
-                  title={service.title}
-                  description={service.description}
-                  icon={service.icon}
-                />
-              ))}
-            </div>
-          </div>
+    <div className="services-page">
+      <div className="content">
+        <div className="services-list">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+            />
+          ))}
         </div>
-      <Sidebar />
+        <Sidebar />
+      </div>
     </div>
     <Footer />
   </>

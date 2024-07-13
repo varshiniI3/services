@@ -1,4 +1,3 @@
-/* src/ServicesGrid.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -26,36 +25,8 @@ a:hover {
 
 .services-page {
   width: 100%;
-  /* margin: 0 auto; */
   padding-top: 5%;
   padding-bottom: 5%;
-}
-
-.container{
-  justify-content: left;
-}
-
-.breadcrumbs {
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2em;
-  background-color: #F2F2F2; /* Page BG Color */
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
-.section {
-  height: 500px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #F2F2F2; /* Page BG Color */
-  margin-bottom: 20px;
-}
-
-.alternate-section {
-  background-color: #192F59; /* Secondary Color */
 }
 
 .content {
@@ -72,6 +43,8 @@ a:hover {
 
 .sidebar {
   flex: 1;
+  margin-left: 20px; /* Space between services-list and sidebar */
+  margin-right: 20px;
 }
 
 .contact {
@@ -118,6 +91,15 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+
+  .sidebar {
+    flex: 1;
+    margin-left: 20px; /* Maintain space between services-list and sidebar */
+  }
 }
 
 @media (max-width: 768px) {
@@ -130,7 +112,8 @@ a:hover {
   }
 
   .sidebar {
-    margin-left: 0;
+    margin-left: 0; /* Remove left margin for sidebar */
+    width: 100%;
   }
 
   .hero-section {
@@ -154,6 +137,15 @@ a:hover {
   .section {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .sidebar {
+    margin-left: 0; /* Remove left margin for sidebar */
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
   }
 }
 
@@ -179,5 +171,14 @@ a:hover {
   .services-list {
     grid-template-columns: 1fr; /* Single column on smallest screens */
     gap: 10px; /* Smaller gap between items */
+  }
+
+  .sidebar {
+    margin-left: 0; /* Remove left margin for sidebar */
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
   }
 }

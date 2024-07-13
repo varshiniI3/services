@@ -197,7 +197,7 @@ a:hover {
   }
 
   .sidebar {
-    margin-left: 10%; /* Remove left margin for sidebar */
+    margin-left: 0; /* Remove left margin for sidebar */
     width: 100%;
   }
 

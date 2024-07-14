@@ -20,17 +20,14 @@
     font-family: 'Poppins', sans-serif;
     font-size: 16px; /* Body text */
     line-height: 1.6;
-    /* border: 2px solid #192F59; Thicker border */
     border-radius: 6px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 25%; /* Adjust the width as needed */
-    min-width: 200px; /* Minimum width to ensure readability */
+    min-width: 100px; /* Minimum width to ensure readability */
 }
 
 .sidebar h2, .sidebar h3, .sidebar h4 {
     color: #192F59;
-    /* margin-top: 10px; Adjust the margin as needed */
-    /* margin-bottom: 10px; */
 }
 
 .sidebar h2 {
@@ -104,18 +101,18 @@
     height: 3px; /* Adjust the height as needed */
     background-color: #192F59; /* Secondary color */
     margin-top: 10px; /* Adjust the margin as needed */
-    /* margin-bottom: 10px; */
 }
 
-.contact-section{
+.contact-section {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-.brochure-section{
+.brochure-section {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
 .benefits-section {
     padding-top: 10px;
 }
@@ -128,8 +125,8 @@
     }
 
     .sidebar-container {
-        width: 80%; /* Adjust width for smaller screens */
-        margin-left: 17%;
+        width: 100%; /* Adjust width for smaller screens */
+        margin-left: 15%;
         margin-right: 0;
     }
 
@@ -140,8 +137,8 @@
 
 @media (max-width: 768px) {
     .sidebar-container {
-        width: 80%; /* Full width on smaller screens */
-        margin-left: 17%;
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 15%;
         margin-right: 0;
     }
 
@@ -161,8 +158,8 @@
 
     .sidebar-container {
         font-size: 14px; /* Smaller font size */
-        width: 78%; /* Full width on smaller screens */
-        margin-left: 19%;
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 15%;
         margin-right: 0;
     }
 
@@ -188,7 +185,8 @@
     }
 
     .main-content {
-        width: 100%;
+        width: 90%;
+        margin-left: 5%;
     }
 }
 
@@ -211,16 +209,16 @@
     }
 
     .sidebar-container {
-        width: 80%; /* Full width on smaller screens */
+        width: 100%;
         margin-left: 15%;
         margin-right: 0;
     }
 
     .main-content {
         width: 100%;
+        margin-left: 0;
     }
 }
-
 
 @media (max-width: 350px) {
     .sidebar h2 {
@@ -241,12 +239,13 @@
     }
 
     .sidebar-container {
-        width: 80%; /* Full width on smaller screens */
+        width: 100%; /* Full width on smaller screens */
         margin-left: 15%;
         margin-right: 0;
     }
 
     .main-content {
         width: 100%;
+        margin-left: 0;
     }
 }

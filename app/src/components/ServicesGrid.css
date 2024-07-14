@@ -28,7 +28,7 @@ a:hover {
   justify-content: center; /* Center align breadcrumbs */
   padding: 20px;
   position: relative;
-  left: 15%; /* Position 15% from the left */
+  /* left: 15%; Position 15% from the left */
   transform: translateX(-15%); /* Centering adjustment */
   width: 70%; /* Adjust the width if necessary */
   text-align: center;
@@ -50,12 +50,12 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Ensure three cards per row */
   gap: 5px; /* Gap between grid items */
+  margin-left: 3%;
 }
 
 .sidebar {
   flex: 1;
   margin-left: 5px; /* Space between services-list and sidebar */
-  margin-right: 20px;
 }
 
 .contact {
@@ -83,6 +83,7 @@ a:hover {
 
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    margin-left: 15%;
   }
 }
 
@@ -106,6 +107,7 @@ a:hover {
 
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    margin-left: 15%;
   }
 
   .sidebar {

@@ -8,17 +8,18 @@
   position: relative;
   justify-content: flex-start; /* Align to the left */
   text-align: left; /* Align text to the left */
-  padding-left: 20px; /* Add some padding to the left */
+  /* padding-left: 20px; Add some padding to the left */
   width: 100%;
 }
 
 .header-content {
   position: absolute; /* Allows precise positioning */
   top: 50%; /* Vertically center the content */
-  left: 20px; /* Adjust as needed */
+  /* left: 20px; Adjust as needed */
   transform: translateY(-50%); /* Adjust for vertical centering */
   font-family: 'Poppins', sans-serif; /* Font Style */
   font-size: 16px; /* Body text */
+  text-align: left;
 }
 
 .header-logo img {
@@ -29,7 +30,7 @@
   font-size: 32px;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: flex-start; /* Align navigation items to the left */
 }
 
@@ -39,7 +40,7 @@
   font-weight: bold;
   position: relative;
   margin: 0 10px; /* Space between links */
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 
 .header-bullet {
@@ -55,7 +56,7 @@
   font-size: 0.7em; /* Smaller font size */
   color: rgba(255, 255, 255, 0.7); /* Less bright white color */
   margin-bottom: 5px; /* Space between this text and the heading */
-  margin-left: 65px;
+  /* margin-left: 10px; */
 }
 
 .header-underline {
@@ -63,7 +64,7 @@
   height: 3px; /* Thickness of the line */
   background-color: white;
   position: absolute;
-  left: 20px; /* Align it to the left */
+  left: 10px; /* Align it to the left */
   top: calc(100% + 10px); /* 10px gap between the text and line */
   display: block;
 }

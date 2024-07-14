@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .container {
@@ -5,6 +6,8 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap; /* Keep the sidebar and main content on the same line on larger screens */
+    max-width: 1200px;
+    margin: 0 auto; /* Center container horizontally */
 }
 
 .sidebar-container {
@@ -125,9 +128,9 @@
     }
 
     .sidebar-container {
-        width: 100%; /* Adjust width for smaller screens */
-        margin-left: 15%;
-        margin-right: 0;
+        width: 80%; /* Adjust width for smaller screens */
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .main-content {
@@ -137,9 +140,9 @@
 
 @media (max-width: 768px) {
     .sidebar-container {
-        width: 100%; /* Full width on smaller screens */
-        margin-left: 15%;
-        margin-right: 0;
+        width: 80%; /* Full width on smaller screens */
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .main-content {
@@ -158,9 +161,9 @@
 
     .sidebar-container {
         font-size: 14px; /* Smaller font size */
-        width: 100%; /* Full width on smaller screens */
-        margin-left: 15%;
-        margin-right: 0;
+        width: 90%; /* Full width on smaller screens */
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .sidebar h2 {
@@ -209,14 +212,15 @@
     }
 
     .sidebar-container {
-        width: 100%;
-        margin-left: 15%;
-        margin-right: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .main-content {
-        width: 100%;
-        margin-left: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -240,12 +244,13 @@
 
     .sidebar-container {
         width: 100%; /* Full width on smaller screens */
-        margin-left: 15%;
+        margin-left: 0;
         margin-right: 0;
     }
 
     .main-content {
         width: 100%;
         margin-left: 0;
+        margin-right: 0;
     }
 }

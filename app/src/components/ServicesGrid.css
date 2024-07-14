@@ -80,9 +80,12 @@ a:hover {
     width: 90%;
   }
 
+  .breadcrumbs {
+    left:15%;
+  }
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    margin-left: 15%;
+    /* margin-left: 15%; */
   }
 }
 
@@ -90,17 +93,20 @@ a:hover {
   .services-page {
     width: 90%;
   }
+  .breadcrumbs {
+    left:15%;
+  }
 
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    margin-left: 15%;
+    /* margin-left: 15%; */
   }
 }
 
 @media (max-width: 768px) {
   .services-list {
     grid-template-columns: 1fr; /* One card per row */
-    margin-left: 15%;
+    /* margin-left: 15%; */
     width: 80%;
   }
 
@@ -111,18 +117,20 @@ a:hover {
     transform: translateX(0); /* Centering adjustment */
     width: 100%; /* Adjust the width if necessary */
     text-align: center;
+    left:15%;
   }
 
   .sidebar {
     width: 80%;
     margin-left: 15%;
   }
+
 }
 
 @media (max-width: 576px) {
   .services-list {
     width: 100%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
   }
 
   .sidebar {
@@ -133,13 +141,16 @@ a:hover {
   .services-page {
     width: 100%;
     padding: 10px;
+  }
+  .breadcrumbs {
+    left:15%;
   }
 }
 
 @media (max-width: 480px) {
   .services-list {
     width: 100%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
   }
 
   .sidebar {
@@ -150,6 +161,9 @@ a:hover {
   .services-page {
     width: 100%;
     padding: 10px;
+  }
+  .breadcrumbs {
+    left:15%;
   }
 }
 

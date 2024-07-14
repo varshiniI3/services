@@ -128,9 +128,26 @@
     }
 
     .sidebar-container {
-        width: 80%; /* Adjust width for smaller screens */
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 830px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-container {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .main-content {
@@ -141,8 +158,8 @@
 @media (max-width: 768px) {
     .sidebar-container {
         width: 80%; /* Full width on smaller screens */
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 17%;
+        margin-right: 16%;
     }
 
     .main-content {
@@ -161,9 +178,9 @@
 
     .sidebar-container {
         font-size: 14px; /* Smaller font size */
-        width: 90%; /* Full width on smaller screens */
+        width: 80%; /* Full width on smaller screens */
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 16%;
     }
 
     .sidebar h2 {
@@ -212,19 +229,19 @@
     }
 
     .sidebar-container {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 80%;
+        margin-left: 6%;
+        margin-right: 17%;
     }
 
     .main-content {
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
     .sidebar h2 {
         font-size: 20px; /* Smaller font size */
     }
@@ -243,9 +260,9 @@
     }
 
     .sidebar-container {
-        width: 100%; /* Full width on smaller screens */
-        margin-left: 0;
-        margin-right: 0;
+        width: 90%; /* Full width on smaller screens */
+        margin-left: 5%;
+        margin-right: 17%;
     }
 
     .main-content {

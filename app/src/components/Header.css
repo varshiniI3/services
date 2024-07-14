@@ -75,6 +75,7 @@
 @media (max-width: 1200px) {
   .header {
     height: 180px; /* Adjust for large screens */
+    width:100%;
   }
 
   .header-nav {
@@ -175,7 +176,7 @@
   .header-content {
     font-size: 14px; /* Smaller font size */
     left: 10px; /* Adjust as needed */
-    padding-left: 5%;
+    padding-left: 10%;
   }
   /* .header-info{
     padding-left: 10%;
@@ -197,7 +198,7 @@
 
 @media (max-width: 480px) {
   .header {
-    height: 100px; /* Adjust for smaller mobile screens */;
+    height: 100px; /* Adjust for smaller mobile screens *;
   }
 
   .header-content {
@@ -219,7 +220,7 @@
   }
 
   .header-content{
-    padding-left: 10%;
+    padding-left: 15%;
   }
   .header-info{
     padding-left: 1px;

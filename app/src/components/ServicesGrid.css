@@ -51,6 +51,7 @@ a:hover {
   grid-template-columns: repeat(3, 1fr); /* Ensure three cards per row */
   gap: 5px; /* Gap between grid items */
   margin-left: 3%;
+  width: 80%; /* Adjusted for better responsiveness */
 }
 
 .sidebar {
@@ -104,11 +105,27 @@ a:hover {
   }
 }
 
+@media (max-width: 830px) {
+  .services-page {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .breadcrumbs {
+    left: 15%;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+}
+
 @media (max-width: 768px) {
   .services-list {
     grid-template-columns: 1fr; /* One card per row */
-    width: 100%;
-    margin-left: 0;
+    width: 80%; /* Adjusted for better responsiveness */
+    margin-left: 15%; /* Center align services-list */
+    margin-right: 15%;
   }
 
   .breadcrumbs {

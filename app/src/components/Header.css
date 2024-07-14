@@ -4,7 +4,7 @@
   background-size: cover;
   height: 200px; /* Adjust based on your header height */
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: left; /* Center vertically */
   position: relative;
   justify-content: flex-start; /* Align to the left */
   text-align: left; /* Align text to the left */
@@ -64,9 +64,10 @@
   height: 3px; /* Thickness of the line */
   background-color: white;
   position: absolute;
-  left: 10px; /* Align it to the left */
+  /* left: 10px; Align it to the left */
   top: calc(100% + 10px); /* 10px gap between the text and line */
   display: block;
+
 }
 
 /* Media Queries for Responsiveness */

@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,7 +27,7 @@ a:hover {
 .breadcrumbs {
   display: flex;
   justify-content: center; /* Center align breadcrumbs */
-  padding: 20px;
+  /* padding; */
   position: relative;
   transform: translateX(-15%); /* Centering adjustment */
   width: 70%; /* Adjust the width if necessary */
@@ -79,7 +80,7 @@ a:hover {
 /* Responsive Styling */
 @media (max-width: 1200px) {
   .services-page {
-    width: 90%;
+    width: 80%;
   }
 
   .breadcrumbs {
@@ -88,12 +89,29 @@ a:hover {
 
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+}
+
+@media (max-width: 1030px) {
+  .services-page {
+    width: 100%;
+  }
+
+  .breadcrumbs {
+    left: 15%;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    /* width: 90%; Adjusted for better responsiveness */
+    /* margin-left: 15%; /* Center align services-list */
+    /* margin-right: 15%; */ 
   }
 }
 
 @media (max-width: 992px) {
   .services-page {
-    width: 90%;
+    width: 100%;
   }
 
   .breadcrumbs {
@@ -102,13 +120,15 @@ a:hover {
 
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    width: 80%; /* Adjusted for better responsiveness */
+     margin-left: 15%; /*Center align services-list*/
+    margin-right: 15%; 
   }
 }
 
 @media (max-width: 830px) {
   .services-page {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
   }
 
   .breadcrumbs {
@@ -117,13 +137,16 @@ a:hover {
 
   .services-list {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    width: 80%; /* Adjusted for better responsiveness */
+    margin-left: 15%; /* Center align services-list */
+    margin-right: 15%;
   }
 }
 
 @media (max-width: 768px) {
   .services-list {
     grid-template-columns: 1fr; /* One card per row */
-    width: 80%; /* Adjusted for better responsiveness */
+    width: 100%; /* Adjusted for better responsiveness */
     margin-left: 15%; /* Center align services-list */
     margin-right: 15%;
   }
@@ -145,8 +168,9 @@ a:hover {
 
 @media (max-width: 576px) {
   .services-list {
-    width: 100%;
-    margin-left: 0;
+    width: 70%; /* Center align services-list */
+    margin-left: 15%; /* Center align services-list */
+    margin-right: 15%;
   }
 
   .sidebar {
@@ -164,15 +188,16 @@ a:hover {
     padding: 10px;
     position: relative;
     transform: translateX(0); /* Centering adjustment */
-    width: 100%; /* Adjust the width if necessary */
+    width: 80%; /* Adjust the width if necessary */
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .services-list {
-    width: 100%;
-    margin-left: 0;
+    width: 70%; /* Center align services-list */
+    margin-left: 15%; /* Center align services-list */
+    margin-right: 15%;
   }
 
   .sidebar {

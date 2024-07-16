@@ -1,83 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); 
+/* Import the Poppins font from Google Fonts */
 
 body {
-    background-color: #F2F2F2; /* Page BG Color */
-    color: #24272C; /* Text Color */
-    font-family: 'Poppins', sans-serif; /* Font Style */
-    font-size: 16px; /* Body text */
+    background-color: #F2F2F2; /* Page background color */
+    color: #24272C; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Font style */
+    font-size: 16px; /* Body text size */
     line-height: 1.6; /* Line height */
 }
 
 .service-card {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    justify-content: center; /* Center the content vertically */
-    background: linear-gradient(145deg, #fff, #e6e6e6);
-    /* border: 1px solid #ddd; */
-    border-radius: 12px; /*Rounded corners */
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a;
-    text-align: center;
-    transition: transform .2s, box-shadow .2s;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background: linear-gradient(145deg, #fff, #e6e6e6); /* Background gradient */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px; /* Margin around the card */
+    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a; /* Box shadow for depth */
+    text-align: center; /* Center text */
+    transition: transform .2s, box-shadow .2s; /* Smooth transition effects */
 }
 
 .service-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 .home-service-icon {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below the icon */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px; /* Adjust the size as needed */
-    height: 80px; /* Adjust the size as needed */
-    border-radius: 50%;
-    background-color: #e0f7ea;
-    font-size: 40px;
-    color: #3DB166; /* Primary Color */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    width: 80px; /* Icon width */
+    height: 80px; /* Icon height */
+    border-radius: 50%; /* Circular shape */
+    background-color: #e0f7ea; /* Background color */
+    font-size: 40px; /* Icon size */
+    color: #3DB166; /* Icon color (primary color) */
 }
 
 .service-content {
-    padding: 10px; /* Box Padding */
+    padding: 10px; /* Padding inside the content box */
 }
 
 .service-content h3 {
-    font-size: 20px; /* Primary heading h3 */
-    margin: 10px 0;
-    color: #192F59; /* Secondary Color */
+    font-size: 20px; /* Heading size */
+    margin: 10px 0; /* Margin above and below the heading */
+    color: #192F59; /* Heading color (secondary color) */
 }
 
 .service-content p {
-    font-size: 16px; /* Body text */
-    color: #24272C; /* Text Color */
+    font-size: 16px; /* Paragraph text size */
+    color: #24272C; /* Text color */
 }
 
-
 .read-more {
-    color: #3db166;
-    display: inline-block;
-    font-weight: 700;
-    margin-top: 10px;
-    text-align: left;
-    text-decoration: none;
+    color: #3db166; /* Text color (primary color) */
+    display: inline-block; /* Inline block display */
+    font-weight: 700; /* Bold text */
+    margin-top: 10px; /* Margin above the link */
+    text-align: left; /* Align text to the left */
+    text-decoration: none; /* Remove underline */
 }
 
 button {
     background: linear-gradient(45deg, #3DB166, #1DA362); /* Gradient background */
-    color: #fff; /* White Text */
+    color: #fff; /* White text */
     border: none; /* Remove border */
-    border-radius: 6px;
-    padding: 10px 20px; /* 10px height, 20px width */
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-    font-weight: bold;
+    border-radius: 6px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition effects */
+    font-weight: bold; /* Bold text */
 }
 
 button:hover {
-    background: linear-gradient(45deg, #192F59, #0f1d3a); /* Secondary Gradient */
-    transform: translateY(-3px);
+    background: linear-gradient(45deg, #192F59, #0f1d3a); /* Different gradient on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
 }

@@ -1,50 +1,48 @@
-/* src/Header.css */
 .header {
-  background-image: url('../assets/images/services-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 200px; /* Adjust based on your header height */
-  display: flex;
-  flex-direction: column; /* Arrange children in a column */
-  align-items: flex-start; /* Align items to the start */
-  justify-content: center; /* Center vertically */
+  background-image: url('../assets/images/services-banner.jpg'); /* Background image for header */
+  background-size: cover; /* Cover the entire header */
+  background-position: center; /* Center the image */
+  height: 200px; /* Set the height of the header */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  justify-content: center; /* Center items vertically */
   text-align: left; /* Align text to the left */
   padding-left: 22%; /* Add padding to the left */
-  width: 100%; /* Ensure full width */
-  position: relative;
+  width: 100%; /* Full width */
+  position: relative; /* Position relative for child elements */
 }
 
 .header-content {
-  font-family: 'Poppins', sans-serif; /* Font Style */
-  font-size: 16px; /* Body text */
-  text-align: left;
+  font-family: 'Poppins', sans-serif; /* Set font style */
+  font-size: 16px; /* Set font size */
+  text-align: left; /* Align text to the left */
   margin-bottom: 10px; /* Space between info and nav */
 }
 
 .header-logo img {
-  height: 40px; /* Adjust based on your logo size */
+  height: 40px; /* Set height of the logo */
 }
 
 .header-nav {
-  font-size: 32px;
-  color: white;
-  display: flex;
-  /* align-items: center; */
+  font-size: 32px; /* Set font size */
+  color: white; /* White text color */
+  display: flex; /* Use flexbox for layout */
   justify-content: flex-start; /* Align navigation items to the left */
 }
 
 .header-link {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  position: relative;
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White text color */
+  font-weight: bold; /* Bold text */
+  position: relative; /* Position relative for child elements */
   margin: 0 0; /* Space between links */
 }
 
 .header-bullet {
-  display: inline-block;
-  width: 5px; /* Bullet size */
-  height: 5px; /* Bullet size */
+  display: inline-block; /* Inline block element */
+  width: 5px; /* Set width */
+  height: 5px; /* Set height */
   background-color: rgba(255, 255, 255, 0.7); /* Less bright white color */
   border-radius: 50%; /* Circle shape */
   margin: 0 8px; /* Space around the bullet */
@@ -60,155 +58,163 @@
 .header-underline {
   width: 30px; /* Length of the line */
   height: 3px; /* Thickness of the line */
-  background-color: white;
-  position: absolute;
-  top: calc(100% + 10px); /* 10px gap between the text and line */
-  display: block;
+  background-color: white; /* White color */
+  position: absolute; /* Absolute positioning */
+  top: calc(100% + 10px); /* Position below the text */
+  display: block; /* Display as block element */
 }
 
 /* Media Queries for Responsiveness */
+
+/* Large screens (max-width: 1280px) */
 @media (max-width: 1280px) {
   .header {
-    height: 180px; /* Adjust for large screens */
-    padding-left: 5%;
+    height: 180px; /* Adjust height */
+    padding-left: 5%; /* Adjust padding */
   }
 
   .header-nav {
-    font-size: 28px; /* Slightly smaller font size */
+    font-size: 28px; /* Adjust font size */
   }
 
   .header-link {
-    font-size: 0.9em; /* Slightly smaller font size */
+    font-size: 0.9em; /* Adjust font size */
     margin: 0 0px; /* Adjust spacing */
   }
 }
 
+/* Medium screens (max-width: 1030px) */
 @media (max-width: 1030px) {
   .header {
-    height: 180px; /* Adjust for large screens */
-    padding-left: 5%; 
+    height: 180px; /* Adjust height */
+    padding-left: 5%; /* Adjust padding */
   }
 
   .header-nav {
-    font-size: 28px; /* Slightly smaller font size */
+    font-size: 28px; /* Adjust font size */
   }
 
   .header-link {
-    font-size: 0.9em; /* Slightly smaller font size */
+    font-size: 0.9em; /* Adjust font size */
     margin: 0 0px; /* Adjust spacing */
   }
 }
 
+/* Tablets (max-width: 992px) */
 @media (max-width: 992px) {
   .header {
-    height: 160px; /* Adjust for tablets */
-    padding-left: 20%; 
+    height: 160px; /* Adjust height */
+    padding-left: 20%; /* Adjust padding */
   }
 
   .header-nav {
-    font-size: 24px; /* Smaller font size */
+    font-size: 24px; /* Adjust font size */
   }
 
   .header-link {
-    font-size: 0.8em; /* Smaller font size */
+    font-size: 0.8em; /* Adjust font size */
     margin: 0px 0; /* Adjust spacing */
   }
 
   .header-logo img {
-    height: 30px; /* Smaller logo */
+    height: 30px; /* Adjust logo size */
   }
 }
 
+/* Smaller tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .header {
-    height: 140px; /* Adjust for smaller tablets */
-    width: 100%;
-    padding-left: 20%; 
+    height: 140px; /* Adjust height */
+    width: 100%; /* Full width */
+    padding-left: 20%; /* Adjust padding */
   }
 
   .header-nav {
-    font-size: 20px; /* Smaller font size */
+    font-size: 20px; /* Adjust font size */
     flex-direction: column; /* Stack links vertically */
   }
 
   .header-link {
-    font-size: 0.8em; /* Smaller font size */
+    font-size: 0.8em; /* Adjust font size */
     margin: 0px 0; /* Adjust spacing */
   }
 
   .header-logo img {
-    height: 25px; /* Smaller logo */
+    height: 25px; /* Adjust logo size */
   }
 }
 
+/* Mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
   .header {
-    height: 120px; /* Adjust for mobile */
-    padding-left: 20%; 
+    height: 120px; /* Adjust height */
+    padding-left: 20%; /* Adjust padding */
   }
 
   .header-content {
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px; /* Adjust font size */
   }
 
   .header-nav {
-    font-size: 18px; /* Smaller font size */
+    font-size: 18px; /* Adjust font size */
   }
 
   .header-link {
-    font-size: 0.7em; /* Smaller font size */
+    font-size: 0.7em; /* Adjust font size */
     margin: 0px 0; /* Adjust spacing */
   }
 
   .header-logo img {
-    height: 20px; /* Smaller logo */
+    height: 20px; /* Adjust logo size */
   }
 }
 
+/* Smaller mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .header {
-    height: 100px; /* Adjust for smaller mobile screens */
+    height: 100px; /* Adjust height */
   }
 
   .header-content {
-    font-size: 12px; /* Smaller font size */
-    padding-left: 5%; 
+    font-size: 12px; /* Adjust font size */
+    padding-left: 5%; /* Adjust padding */
   }
 
   .header-nav {
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px; /* Adjust font size */
   }
 
   .header-link {
-    font-size: 0.6em; /* Smaller font size */
+    font-size: 0.6em; /* Adjust font size */
     margin: 0px 0; /* Adjust spacing */
   }
 
   .header-logo img {
-    height: 15px; /* Smaller logo */
+    height: 15px; /* Adjust logo size */
   }
 }
 
+/* Extra small mobile devices (max-width: 330px) */
 @media (max-width: 330px) {
   .header {
-    height: 100px; /* Adjust for smaller mobile screens */
+    height: 100px; /* Adjust height */
   }
 
   .header-content {
-    font-size: 12px; /* Smaller font size */
-    padding-left: 5%; 
+    font-size: 12px; /* Adjust font size */
+    padding-left: 5%; /* Adjust padding */
   }
 
   .header-nav {
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px; /* Adjust font size */
   }
 
   .header-link {
-    font-size: 0.6em; /* Smaller font size */
+    font-size: 0.6em; /* Adjust font size */
     margin: 0px 0; /* Adjust spacing */
   }
 
   .header-logo img {
-    height: 15px; /* Smaller logo */
+    height: 15px; /* Adjust logo size */
   }
 }
